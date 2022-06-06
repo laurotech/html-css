@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+        h1{/*elemento do tipo BOX-LEVEL */
+            /*"display: inline;" - transforma display block em inline*/ 
+
+            background-color: lightgray;
+            
+           height: 300px;
+            width: 300px;
+            
+           /*exemplo não consolidado*/
+           /* border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;*/
+            
+            /*consolidado*/
+            border: 10px solid darkgray;
+
+            /*exemplo não consolidado*/    
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+
+            /*consolidado*/
+            padding: 10px;
+            
+            /* exemplo não consolidado*/
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+                       
+            /*consolidado*/
+            margin:20px auto 40px auto;
+
+           /* outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;*/
+
+            outline: 5px dashed salmon;
+
+           /* margin: auto; margem no centralizada para caixa*/
+        }
+        a{/*elemento do tipo INLINE-LEVEL*/
+            /* exemplo não consolidado*/
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: red;*/
+            /*"display: block;" -transforma display inline em block*/ 
+           
+
+            /*consolidado*/
+            border: 10px solid red;
+
+
+            /* exemplo não consolidado*/
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+
+            /*consolidado*/
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemlos de caixas box-level</h1>
+    <p>Parágrafos também são Exemlos de box-leve, mas os
+        <a href="#">links são Exemlos de caixas inline-level</a>. Vamos ver como tudo isso funciona
+    </p>
+    
+</body>
+</html>
