@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas de Exercicios</title>
+    <style> 
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }   
+    table{
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 10px;
+
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+        position: sticky;
+        top: -1px;
+    }
+    thead,tfoot{
+        background-color: gray;
+        color: white;
+    }
+    thead > tr > th {
+        position: sticky;
+        top: 43px;
+        background-color: gray;
+    }
+    td.num{
+        text-align: right;
+    }
+    td.ordem{
+        width: 5px;
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+    .c_sexo, .c_idade, .c_prof{
+        background-color: yellow;
+    }
+
+    .c_nome {
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>Exercicios de Tabelas</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+<table>  
+    <colgroup>
+        <col class="c_nome">
+        <col class="c_sexo">
+        <col class="c_idade">
+        <col class="c_prof">
+    </colgroup>
+    <caption>Cadastro</caption>  
+    <thead>
+    <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+    </tr>
+     </thead>
+     <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Claudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Nutricionista</td>
+            </tr>
+
+     </tbody>
+     <tfoot>
+    </tfoot>
+</table>
+</body>
+</html>
